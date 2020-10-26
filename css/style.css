@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Denk+One&display=swap');
+
+/* Applies to everything on the website */
+* {
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  background: radial-gradient(ellipse at bottom, #2d3d54 0%, #090a0f 100%) ;
+}
+
+
+ body{
+     margin: 0;
+     font-family: 'Didact Gothic',sans-serif;
+     text-align: center;
+ }
+
+ img{
+     /* So it properly works when the window is resized*/
+     max-width: 100%;
+     position:relative;
+     margin: auto;
+     height: auto;
+ }
+
+ /*
+ ==================== CONTAINERS
+  */
+  .container{
+     width: 95%;
+     margin: 0em auto;
+     padding-top: 15em;
+     height: 100vh;
+ }
+  .DevContainer{
+     width: 100%;
+     padding-top: 0em;
+     border-radius: 0px;
+     height: auto;
+  }
+
+
+/*
+==================== TYPHOGRAPHY
+ */
+
+h1{
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+}
+.title{
+    font-weight: 700;
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.36);
+    margin-bottom: 1.2em;
+    text-align: center;
+}
+
+.title span{
+    font-weight: 300;
+    display: block;
+    font-size: 0.5em;
+}
+.about-title{
+    text-align: left;
+    margin:0;
+}
+
+.Dev-title{
+    margin-bottom: 0em;
+    padding-top: 0em;
+}
+
+        /* Changes the font sizes based on screensize*/
+        @media (max-width: 100rem) {
+            p{
+                font-size: 1.25rem;
+            }
+
+        }
+        @media (max-width: 90rem) {
+            .title{
+                font-size: 3.6rem;
+            }
+            .title span{
+                font-weight: 300;
+                display: block;
+                font-size: 0.45em;
+            }
+        }
+        @media (max-width: 70rem) {
+            .title{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 40rem) {
+            .about-grid-item p{
+                font-size: 1rem;
+            }
+             .gameDevDescription p{
+                font-size: 1rem;
+            }
+        }
+
+
+
+/*
+========== BUTTONS
+ */
+.button{
+    display:inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: .40em 1em;
+}
+
+        /* Changes sizes when window width increases*/
+        @media (min-width: 80rem) {
+            .button{
+                font-size: 1.5rem;
+            }
+        }
+
+.button-accent{
+    color: #FFFF;
+}
+.button-accent:hover,
+.button-accent:focus{
+    background: rgba(255, 255, 255, 0.25);
+    color: #FFFFFF;
+}
+
+.gitHub-btn{
+    display:inline-block;
+    font-family: 'Didact Gothic',sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: .2em 0.9em;
+}
+
+        /* Changes sizes when window width increases*/
+        @media (min-width: 80rem) {
+            .gitHub-btn{
+                font-size: 1.3rem;
+            }
+        }
+
+.gitHub-btn{
+    color: #FFFF;
+}
+.gitHub-btn:hover,
+.gitHub-btn .wayOut:focus{
+    background: rgba(255, 255, 255,0.1);
+    color: #FFFFFF;
+}
+
+
+ /*
+======================== HEADER ========================
+ */
+header{
+    position: absolute; /* Adds the headed above the hero-bg image */
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0.8em;
+}
+
+nav a{
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: .55em;  /* Increases the "clickable" area */
+    color: #FFF;
+}
+
+nav a:hover,
+nav a:focus{
+    color: #DDD;
+}
+/*
+================================================ SCROLL BAR ==========================================
+ */
+
+
+.scrollbar
+{
+	float: left;
+	max-height: 350px;
+    height: 100%;
+	width: 65px;
+	background: rgba(0,0,0,0);
+	overflow-y: scroll;
+	margin-bottom: 25px;
+    overflow: auto;
+}
+
+.scrollbarAbout
+{
+	max-height: 395px;
+    height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0);
+	overflow-y: scroll;
+    overflow: auto;
+    padding-right: 1em;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+
+}
+
+
+/*
+ *  STYLES 2, 3, 4
+ */
+#style-2::-webkit-scrollbar-track,#style-3::-webkit-scrollbar-track,#style-4::-webkit-scrollbar-track,#style-5::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#style-2::-webkit-scrollbar,#style-3::-webkit-scrollbar,#style-4::-webkit-scrollbar,#style-5::-webkit-scrollbar
+{
+	width: 12px;
+	background-color:rgba(0,0,0,.2);
+}
+
+/*
+ *  STYLES 2 COLOR
+ */
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.6);
+	background-color: #ba8f79;
+}
+/*
+ *  STYLE 3 COLOR
+ */
+
+#style-3::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.6);
+	background-color: #59a968;
+}
+/*
+ *  STYLE 4 COLOR
+ */
+#style-4::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.6);
+	background-color: #8778cd;
+}
+
+#style-5::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.6);
+	background-color: #bababa;
+}
+
+       @media (max-width: 90rem) {
+            #style-5::-webkit-scrollbar,#style-4::-webkit-scrollbar, #style-3::-webkit-scrollbar, #style-2::-webkit-scrollbar
+            {
+                width: 7px;
+            }
+
+
+        }
+
+
+
+ /*
+================================================ HERO ================================================
+ */
+
+/* Hero background covers the first container and the about section */
+.hero{
+
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat-y;
+}
+
+
+/*
+================================================ ABOUT ================================================
+ */
+.about {
+    height: auto;
+    padding-bottom: 10em;
+    padding-top: 5em;
+
+}
+
+.about-grid-container{
+    width: 80%;
+
+    background-color: rgba(0, 0, 0, 0.29);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    border-color: rgba(0, 0, 0, 0.36);
+
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+
+    justify-items: stretch;
+    margin: auto;
+    text-align: justify;
+    padding-bottom: 4em;
+    padding-top: 1.7em;
+    padding-right: 4em;
+    padding-left: 4em;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+
+}
+.about-grid-item{
+    text-align: justify;
+    width: 100%;
+    margin: auto auto;
+    color: #FFF;
+}
+.about-profile-photo{
+    background-image: url(../img/cv.jpg);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-size: cover;
+    background-position: center;
+    max-width: 400px;
+    width: 40vh;
+    height: 45vh;
+
+}
+.about-item1{
+    grid-column: 1/3;
+    grid-row: 2;
+
+}
+.about-item2{
+    grid-column: 3/6;
+    grid-row: 1;
+    text-align: left;
+
+}
+.about-item3{
+    grid-column: 3/6;
+    grid-row: 2 ;
+}
+.about-item4{
+    grid-column: 3/6;
+    grid-row: 3 ;
+    padding-top: 1em;
+    text-align: left;
+}
+.example-photo{
+    width: 50%;
+    height: 10%;
+    object-fit: cover;
+}
+
+.photoAlbum{
+    display: flex;
+    flex-wrap: wrap ;
+    object-fit: cover;
+
+}
+.photoAlbumPhoto{
+    max-height: 500px;
+    height: 100%;
+    flex: 1 1 200px ;
+    margin: 2px;
+    background-size: auto 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+        @media (max-width: 90rem) {
+            .about {
+                height: auto;
+            }
+            .about-grid-container {
+                row-gap: .8rem;
+                padding: 2.5em;
+                width: 90vw;
+            }
+            .about-grid-item {
+                text-align: center;
+            }
+
+            .about-title {
+                text-align: center;
+            }
+            .about-profile-photo {
+                margin: auto auto;
+                border-radius: 200px;
+                width: 25vh;
+                height: 25vh;
+            }
+            .about-item1{
+                grid-column: 1/-1; /* the 1/-1 removes the second column */
+                grid-row: 1;
+                text-align: justify;
+            }
+            .about-item2{
+                grid-column: 1/-1;
+                grid-row: 2;
+                text-align: center;
+            }
+            .about-item3{
+                grid-column: 1/-1; /* the 1/-1 removes the second column */
+                grid-row: 3 ;
+                text-align: center;
+            }
+
+            .photoAlbumPhoto{
+                background-size: 180% auto;
+
+            }
+            .about-item4{
+                grid-column: 1/3;
+                grid-row: 4;
+            }
+        }
+
+ /*
+================================================ GAME DEVELOPMENT ================================================
+ */
+
+.Development {
+    height: auto;
+    padding-bottom: 0em;
+    padding-top: 5em;
+
+}
+
+/* Hero background covers the first container and the about section */
+.Dev{
+    background-color: rgba(31, 58, 58, 0.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6), 0 6px 20px 30px rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.36);
+    background-position: center;
+    color: #FFF;
+    width: 100%;
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
+    padding: 1em;
+    padding-top:0em;
+}
+.DevDescription{
+    width: 95%;
+    text-align: justify;
+    margin: auto auto;
+
+}
+
+.dev-grid-container{
+    width: 95%;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.36);
+
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+    justify-items: stretch;
+    margin: auto;
+    text-align: justify;
+    padding: 2em;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 2em;
+}
+
+
+.dev-grid-item{
+    text-align: justify;
+    width: 95%;
+    margin: auto auto;
+}
+
+.dev-item1{
+    grid-column: 6/10;
+    grid-row: 1/2 ;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 2em;
+
+}
+
+.dev-item2{
+    grid-column: 1/6;
+    grid-row: 1/5 ;
+    text-align: justify;
+
+}
+.dev-item3{
+    grid-column: 6/10;
+    grid-row: 2/5;
+    text-align: justify;
+    padding-right: 1em;
+}
+
+.dev-item4{
+    grid-column: 6/10;
+    grid-row: 5/5;
+    padding-top: 1em;
+    text-align: right;
+}
+
+/*
+LOGO
+ */
+.dev-item1-inverted{
+    grid-column: 1/4;
+    grid-row: 1 ;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+/*
+IMAGES
+ */
+.dev-item2-inverted{
+    grid-column: 4/10;
+    grid-row: 1/4 ;
+    text-align: justify;
+}
+/*
+DESCRIPTION
+ */
+.dev-item3-inverted{
+    grid-column: 1/4;
+    grid-row: 2/4;
+    text-align: justify;
+    padding-right: 1em;
+}
+/*
+GITHUB BUTTON
+ */
+.dev-item4-inverted{
+    grid-column: 1;
+    grid-row: 5;
+    padding-top: 1em;
+    text-align: left;
+    width: 100%;
+}
+/*
+SITE BUTTON
+ */
+.dev-item5-inverted{
+
+    grid-column: 2;
+    grid-row: 5;
+    padding-top: 1em;
+    width: 100%;
+    text-align: center;
+}
+.dev-item6-inverted{
+
+    grid-column:3;
+    grid-row: 5;
+    padding-top: 1em;
+    width: 100%;
+    text-align: right;
+}
+.mySlides1, .mySlides2, .mySlides3{
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+        @media (max-width: 90rem) {
+            .dev-grid-container{
+                row-gap: 0.5rem;
+                padding: 1em;
+            }
+
+            .dev-item1, .dev-item1-inverted{
+                grid-column: 1/-1; /* the 1/-1 removes the second column */
+                grid-row: 1;
+                text-align: center;
+                padding-right: 3rem;
+            }
+
+            .dev-item2, .dev-item2-inverted{
+                grid-column:  1/-1; /* the 1/-1 removes the second column */
+                grid-row: 2 ;
+                text-align: justify;
+
+            }
+            .dev-item3, .dev-item3-inverted{
+                grid-column:  1/-1; /* the 1/-1 removes the second column */
+                grid-row: 3;
+                text-align: justify;
+            }
+            .dev-item4, .dev-item4-inverted{
+                grid-column:  1/-1; /* the 1/-1 removes the second column */
+                grid-row: 4;
+                padding-top: .5em;
+                text-align: center;
+            }
+
+            .dev-item5-inverted{
+                grid-column:  1/-1; /* the 1/-1 removes the second column */
+                grid-row: 5;
+                padding-top:.1em;
+                padding-left: 0em;
+                text-align: center;
+            }
+             .dev-item6-inverted{
+                grid-column:  1/-1; /* the 1/-1 removes the second column */
+                grid-row: 6;
+                padding-top:.1em;
+                padding-left: 0em;
+                text-align: center;
+            }
+
+        }
+
+
