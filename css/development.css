@@ -1,0 +1,230 @@
+
+ /*
+================================================ GAME DEVELOPMENT ================================================
+ */
+
+.Development {
+    height: auto;
+    padding-bottom: 0em;
+    padding-top: 5em;
+}
+
+ .DevContainer{
+     width: 100%;
+     padding-top: 0em;
+     border-radius: 0px;
+     height: auto;
+ }
+
+/* Hero background covers the first container and the about section */
+.Dev{
+    background-color: rgba(31, 58, 58, 0.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6), 0 6px 20px 30px rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.36);
+    background-position: center;
+    color: #FFF;
+    width: 100%;
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
+    padding: 1em;
+    padding-top:0em;
+}
+
+.Dev-title{
+    margin-bottom: 0em;
+    padding-top: 0em;
+}
+
+.DevDescription{
+    width: 95%;
+    text-align: justify;
+    margin: auto auto;
+
+}
+
+
+/*
+___________________________ CONTAINER / GRID ITEMS ___________________________
+ */
+
+.dev-grid-container{
+    width: 95%;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.36);
+
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+    justify-items: stretch;
+    margin: auto;
+    text-align: justify;
+    padding: 2em;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 2em;
+}
+
+.dev-grid-item{
+    text-align: justify;
+    width: 95%;
+    margin: auto auto;
+}
+
+/* ---- LOGO ---- */
+ .dev-item1{
+    grid-column: 6/10;
+    grid-row: 1/2 ;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 2em;
+}
+.dev-item1-inverted{
+    grid-column: 1/4;
+    grid-row: 1 ;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+/* ---- IMAGES ---- */
+.dev-item2-inverted{
+    grid-column: 4/10;
+    grid-row: 1/4 ;
+    text-align: justify;
+}
+.dev-item2{
+    grid-column: 1/6;
+    grid-row: 1/5 ;
+    text-align: justify;
+}
+
+/* ---- DESCRIPTION ---- */
+.dev-item3-inverted{
+    grid-column: 1/4;
+    grid-row: 2/4;
+    text-align: justify;
+    padding-right: 1em;
+}
+.dev-item3{
+    grid-column: 6/10;
+    grid-row: 2/5;
+    text-align: justify;
+    padding-right: 1em;
+}
+
+/* ---- BUTTON GITHUB ---- */
+.dev-item4-inverted{
+    grid-column: 1;
+    grid-row: 5;
+    padding-top: 1em;
+    text-align: left;
+    width: 100%;
+}
+.dev-item4{
+    grid-column: 6/10;
+    grid-row: 5/5;
+    padding-top: 1em;
+    text-align: right;
+}
+
+/* ---- BUTTON SIDE ---- */
+.dev-item5-inverted{
+
+    grid-column: 2;
+    grid-row: 5;
+    padding-top: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*
+___________________________ BUTTONS ___________________________
+ */
+
+.gitHub-btn{
+    display:inline-block;
+    font-family: 'Didact Gothic',sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: .2em 0.9em;
+}
+
+        /* Changes sizes when window width increases*/
+        @media (min-width: 80rem) {
+            .gitHub-btn{
+                font-size: 1.3rem;
+            }
+        }
+
+.gitHub-btn{
+    color: #FFFF;
+}
+.gitHub-btn:hover,
+.gitHub-btn .wayOut:focus{
+    background: rgba(255, 255, 255,0.1);
+    color: #FFFFFF;
+}
+
+/*
+___________________________ GENERAL MEDIA ___________________________
+ */
+
+
+        @media (max-width: 90rem) {
+            .dev-grid-container{
+                row-gap: 0.5rem;
+                padding: 1em;
+            }
+
+            .dev-item1, .dev-item1-inverted{
+                grid-column: 1/-1; /* the 1/-1 removes the second column */
+                grid-row: 1;
+                text-align: center;
+                padding-right: 3rem;
+            }
+
+            .dev-item2, .dev-item2-inverted{
+                grid-column:  1/-1; /* the 1/-1 removes the second column */
+                grid-row: 2 ;
+                text-align: justify;
+
+            }
+            .dev-item3, .dev-item3-inverted{
+                grid-column:  1/-1; /* the 1/-1 removes the second column */
+                grid-row: 3;
+                text-align: justify;
+            }
+            .dev-item4, .dev-item4-inverted{
+                grid-column:  1/-1; /* the 1/-1 removes the second column */
+                grid-row: 4;
+                padding-top: .5em;
+                text-align: center;
+            }
+
+            .dev-item5-inverted{
+                grid-column:  1/-1; /* the 1/-1 removes the second column */
+                grid-row: 5;
+                padding-top:.1em;
+                padding-left: 0em;
+                text-align: center;
+            }
+             .dev-item6-inverted{
+                grid-column:  1/-1; /* the 1/-1 removes the second column */
+                grid-row: 6;
+                padding-top:.1em;
+                padding-left: 0em;
+                text-align: center;
+            }
+
+        }
+
+

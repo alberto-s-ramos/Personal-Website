@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="../css/background.css" rel="stylesheet" type="text/css">
+    <link href="../css/about.css" rel="stylesheet" type="text/css">
+    <link href="../css/development.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../scripts.js"></script>
     <title>Alberto Ramos CV</title>
 </head>
 
-
 <body>
+
+    <!-- _________________________________ NAV BAR _________________________________ -->
     <header>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
                 <li><a href="#aboutsection">About</a></li>
+                <li><a href="#gamesection">Game Development</a></li>
+                <li><a href="#websection">Web Development</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="wrapper">
+
+        <!-- _________________________________ HERO _________________________________ -->
         <section class="hero">
         <div id="stars"></div> <div id="stars2"></div><div id="stars3"></div>
         <div class="container">
@@ -34,6 +39,8 @@
         </div>
         </section>
 
+
+        <!-- _________________________________ ABOUT _________________________________ -->
         <section class="about" id="aboutsection">
             <div class="about-grid-container">
                 <div class="about-grid-item about-item1 about-profile-photo"></div>
@@ -58,12 +65,16 @@
             </div>
         </section>
 
+
+        <!-- _________________________________ GAME DEVELOPMENT _________________________________ -->
         <section class="Development" id="gamesection">
             <!--<div id="stars"></div> <div id="stars2"></div> <div id="stars3">-->
             <div class="Dev">
+                    <!-- ___________________ SECTION TITLE ___________________ -->
                     <h1 class="title Dev-title">Game Development  <i class="fa fa-gamepad"></i></h1>
-                    <div class="DevDescription">
 
+                    <!-- ___________________ SECTION DESCRIPTION ___________________ -->
+                    <div class="DevDescription">
                         <p> Game design and development is a passion I discovered during my Master degree. It all started as pure curiosity and ended up being my area of specialization.
                             <br>In total, I've done three game development related courses during my Master degree: Game Design, Game Development Methodology and Virtual Reality.
                             <br>All of these courses allowed me to learn and improve my skills in the area, each in its own way. Additionally, my master thesis also required me to develop a game from scratch which ended up being tested by over 50 people.
@@ -71,6 +82,7 @@
                         </p>
                     </div>
 
+                    <!-- ___________________ CONTAINER: LOOT MACHINA X ___________________ -->
                     <div class="dev-grid-container" style="background-color: rgba(214,109,36,0.20);">
                             <div class="dev-grid-item dev-item1">
                                 <img src="../img/LootMachinaX.png" style="width:100%;max-width:450px">
@@ -112,6 +124,7 @@
                             </div>
                     </div>
 
+                    <!-- ___________________ CONTAINER: THE ISLAND ___________________ -->
                     <div class="dev-grid-container" style="background-color: rgba(51,112,68,0.20);">
                          <div class="dev-grid-item dev-item1-inverted">
                                 <img src="../img/theislandlogo.png" style="width:100%;max-width:600px">
@@ -153,7 +166,9 @@
                                 <a href="https://github.com/albertoramos1997/The-Island.git" class="gitHub-btn " target="_blank"><i class="fa fa-github"></i>  GitHub </a>
                             </div>
                     </div>
-                     <div class="dev-grid-container" style="background-color: rgba(113,70,121,0.20);">
+
+                    <!-- ___________________ CONTAINER: WAY OUT ___________________ -->
+                    <div class="dev-grid-container" style="background-color: rgba(113,70,121,0.20);">
                             <div class="dev-grid-item dev-item1">
                                 <img src="../img/WayOutLogo.png" style="width:100%;max-width:600px;">
                             </div>
@@ -207,9 +222,15 @@
 
             </div>
         </section>
+
+
+        <!-- _________________________________ WEB DEVELOPMENT _________________________________ -->
         <section class="Development" id="websection">
                 <div class="Dev">
+                    <!-- ___________________ SECTION TITLE ___________________ -->
                     <h1 class="title Dev-title">Web Development  <i class="fa fa-desktop"></i></h1>
+
+                    <!-- ___________________ SECTION DESCRIPTION ___________________ -->
                     <div class="DevDescription">
 
                         <p> Game design and development is a passion I discovered during my Master degree. It all started as pure curiosity and ended up being my area of specialization.
@@ -219,6 +240,7 @@
                         </p>
                     </div>
 
+                    <!-- ___________________ CONTAINER: WHERE TO CLIMG ___________________ -->
                     <div class="dev-grid-container" style="background-color: rgba(255,255,255,0.2);">
                          <div class="dev-grid-item dev-item1-inverted">
                                 <img src="../img/WhereToClimb.PNG" style="width:100%;max-width:600px">
@@ -269,12 +291,42 @@
             </div>
         </section>
 
-
-
     </section>
 
 
-        <script>
+    <!-- _________________________________ SCRIPTS _________________________________ -->
+
+    <!-- ______ SMOOTH SCROLL ______ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+        </script>
+
+    <!-- ______ SLIDES / CHANGE IMAGE ______ -->
+    <script>
             var slideIndex = [1,1,1,1];
             var slideId = ["mySlides1", "mySlides2", "mySlides3","mySlides4"]
             showSlides(1, 0);
@@ -296,9 +348,8 @@
               }
               x[slideIndex[no]-1].style.display = "block";
             }
+
         </script>
-
-
 
 
 </body>

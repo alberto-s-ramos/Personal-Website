@@ -1,0 +1,11 @@
+ /*
+================================================ HERO ================================================
+ */
+
+/* Hero background covers the first container and the about section */
+.hero{
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat-y;
+}
