@@ -18,14 +18,15 @@
         <nav>
             <ul>
                 <li><a href="#aboutsection">About</a></li>
-                <li><a href="#gamesection">Game Development</a></li>
-                <li><a href="#websection">Web Development</a></li>
+                <li><a href="#gamesection">Games <i class="fa fa-gamepad"></i></a></li>
+                <li><a href="#appsection">Apps <i class="fa fa-mobile"></i></a></li>
+                <li><a href="#websection">Web <i class="fa fa-desktop"></i></a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="wrapper">
+    <section id="wrap">
 
         <!-- _________________________________ HERO _________________________________ -->
         <section class="hero">
@@ -71,16 +72,18 @@
             <!--<div id="stars"></div> <div id="stars2"></div> <div id="stars3">-->
             <div class="Dev">
                     <!-- ___________________ SECTION TITLE ___________________ -->
-                    <h1 class="title Dev-title">Game Development  <i class="fa fa-gamepad"></i></h1>
+                    <h1 class="title Dev-title">Game Development  <i class="fa fa-gamepad"></i>
+                            <span> Unity | C# | Blender</span>
+                    </h1>
 
                     <!-- ___________________ SECTION DESCRIPTION ___________________ -->
-                    <div class="DevDescription">
+                    <!--<div class="DevDescription">
                         <p> Game design and development is a passion I discovered during my Master degree. It all started as pure curiosity and ended up being my area of specialization.
                             <br>In total, I've done three game development related courses during my Master degree: Game Design, Game Development Methodology and Virtual Reality.
                             <br>All of these courses allowed me to learn and improve my skills in the area, each in its own way. Additionally, my master thesis also required me to develop a game from scratch which ended up being tested by over 50 people.
                             <br>Below you can find a small portfolio with some of the games I developed throughout the years.
                         </p>
-                    </div>
+                    </div>-->
 
                     <!-- ___________________ CONTAINER: LOOT MACHINA X ___________________ -->
                     <div class="dev-grid-container" style="background-color: rgba(214,109,36,0.20);">
@@ -223,25 +226,147 @@
             </div>
         </section>
 
-
-        <!-- _________________________________ WEB DEVELOPMENT _________________________________ -->
-        <section class="Development" id="websection">
+        <!-- _________________________________ APP DEVELOPMENT _________________________________ -->
+        <section class="Development"  id="appsection">
                 <div class="Dev">
                     <!-- ___________________ SECTION TITLE ___________________ -->
-                    <h1 class="title Dev-title">Web Development  <i class="fa fa-desktop"></i></h1>
+                    <h1 class="title Dev-title">App Development  <i class="fa fa-mobile"></i>
+                            <span> Android Studio | Java | XML </span>
+                    </h1>
 
                     <!-- ___________________ SECTION DESCRIPTION ___________________ -->
-                    <div class="DevDescription">
+                    <!--<div class="DevDescription">
 
                         <p> Game design and development is a passion I discovered during my Master degree. It all started as pure curiosity and ended up being my area of specialization.
                             <br>In total, I've done three game development related courses during my Master degree: Game Design, Game Development Methodology and Virtual Reality.
                             <br>All of these courses allowed me to learn and improve my skills in the area, by using tools such as Unity and Blender. Additionally, my master thesis also required me to develop a game from scratch which ended up being tested by over 50 people.
                             <br>Below you can find a small portfolio with some of the games I developed throughout the years.
                         </p>
+                    </div>-->
+
+                    <div class="app-wrapper">
+                        <!-- ___________________ CONTAINER: COFFEE SPOT ___________________ -->
+                        <div class="dev-grid-app-container coffeeSpot" style="background-color: rgba(183,166,128,0.4);">
+                         <div class="dev-grid-item dev-item1-app-inverted">
+                                <img src="../img/coffeespot.png" style="width:100%;max-width:450px">
+                         </div>
+
+                         <div class="dev-grid-item dev-item2-app-inverted">
+
+                             <div class="slideshow-container">
+                                  <div class="mySlides4">
+                                    <img src="../img/CoffeeSpot1.png" style="width:100%; border-radius: 20px;">
+                                  </div>
+
+                                  <div class="mySlides4">
+                                    <img src="../img/CoffeeSpot2.png" style="width:100%; border-radius: 20px; ">
+                                  </div>
+
+                                  <div class="mySlides4">
+                                    <img src="../img/CoffeeSpot3.png"style="width:100%; border-radius: 20px;">
+                                  </div>
+
+                                  <div class="mySlides4">
+                                    <img src="../img/CoffeeSpot4.png"style="width:100%; border-radius: 20px; ">
+                                  </div>
+
+                                  <div class="mySlides4">
+                                    <img src="../img/CoffeeSpot5.png"style="width:100%; border-radius: 20px; ">
+                                  </div>
+
+                                  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                             </div>
+                         </div>
+
+                            <div class="dev-grid-item dev-item3-app-inverted scrollbar" id="style-1">
+                                    <p>As part of a student enterpreneus contest in Portugal (Poliempreende 18'), I was responsible for the design and development of the front-end part of a mobile application called Coffee Spot.
+                                    <br><br>
+                                    This app had as main goals to facilitate and accelerate the process of customer service, to provide information related with the different products of the brand and to show the customers the location of the various stores throughout the city.
+                                    </p>
+                            </div>
+                            <div class="dev-grid-item dev-item4-app-inverted">
+                                <a href="https://github.com/albertoramos1997/CoffeeSpot.git" class="gitHub-btn " target="_blank"><i class="fa fa-github"></i>  GitHub </a>
+                            </div>
+
+
+                    </div>
+                        <!-- ___________________ CONTAINER: GREEN KEEPER ___________________ -->
+                        <div class="dev-grid-app-container greenKeeper" style="background-color: rgba(50,90,42,0.4);">
+                         <div class="dev-grid-item dev-item1-app-inverted">
+                                <img src="../img/GreenKeeper.png" style="width:100%;max-width:380px">
+                         </div>
+
+                         <div class="dev-grid-item dev-item2-app-inverted">
+
+                             <div class="slideshow-container">
+                                  <div class="mySlides5">
+                                    <img src="../img/GK1.png" style="width:100%;  border-radius: 20px;">
+                                  </div>
+
+                                  <div class="mySlides5">
+                                    <img src="../img/GK2.png" style="width:100%;  border-radius: 20px; ">
+                                  </div>
+
+                                  <div class="mySlides5">
+                                    <img src="../img/GK3.png"style="width:100%; border-radius: 20px;">
+                                  </div>
+
+                                  <div class="mySlides5">
+                                    <img src="../img/GK4.png"style="width:100%;  border-radius: 20px; ">
+                                  </div>
+
+                                  <div class="mySlides5">
+                                    <img src="../img/GK5.png"style="width:100%;  border-radius: 20px; ">
+                                  </div>
+
+                                  <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                             </div>
+                         </div>
+
+                            <div class="dev-grid-item dev-item3-app-inverted scrollbar" id="style-3">
+                                    <p> This project arose in the context of the course of Internet of Things Interaction Design. The courses' goal was to create a product using Internet of Things concepts and Human-Computer Interaction principles
+                                    <br><br>
+                                    Our group chose to approach the way users interact with their plants, offering an automated solution which guaranteed plants' healthcare by remote control.
+                                    <br><br>
+                                    The mobile app, which me and other colleague were responsible for, allowed users to monitor and control their plants’ conditions, namely temperature, and moisture levels as well as irrigation duration and frequency.
+                                    </p>
+                            </div>
+                            <div class="dev-grid-item dev-item4-app-inverted">
+                                <a href="https://github.com/albertoramos1997/Green-Keeper.git" class="gitHub-btn " target="_blank"><i class="fa fa-github"></i>  GitHub </a>
+                            </div>
+
+
+                    </div>
                     </div>
 
-                    <!-- ___________________ CONTAINER: WHERE TO CLIMG ___________________ -->
-                    <div class="dev-grid-container" style="background-color: rgba(255,255,255,0.2);">
+
+
+
+            </div>
+        </section>
+
+        <!-- _________________________________ WEB DEVELOPMENT _________________________________ -->
+        <section class="Development" id="websection">
+                <div class="Dev">
+                    <!-- ___________________ SECTION TITLE ___________________ -->
+                    <h1 class="title Dev-title">Web Development  <i class="fa fa-desktop"></i>
+                           <span> HTML | CSS | JavaScript</span>
+                    </h1>
+
+                    <!-- ___________________ SECTION DESCRIPTION ___________________ -->
+                    <!--<div class="DevDescription">
+
+                        <p> Game design and development is a passion I discovered during my Master degree. It all started as pure curiosity and ended up being my area of specialization.
+                            <br>In total, I've done three game development related courses during my Master degree: Game Design, Game Development Methodology and Virtual Reality.
+                            <br>All of these courses allowed me to learn and improve my skills in the area, by using tools such as Unity and Blender. Additionally, my master thesis also required me to develop a game from scratch which ended up being tested by over 50 people.
+                            <br>Below you can find a small portfolio with some of the games I developed throughout the years.
+                        </p>
+                    </div>-->
+
+                    <!-- ___________________ CONTAINER: WHERE TO CLIMB ___________________ -->
+                    <div class="dev-grid-container" style="background-color: rgba(255,255,255,0.15);">
                          <div class="dev-grid-item dev-item1-inverted">
                                 <img src="../img/WhereToClimb.PNG" style="width:100%;max-width:600px">
                          </div>
@@ -249,24 +374,24 @@
                          <div class="dev-grid-item dev-item2-inverted">
 
                              <div class="slideshow-container">
-                                  <div class="mySlides4">
+                                  <div class="mySlides6">
                                     <img src="../img/WhereToClimb1.PNG" style="width:100%; border-radius: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                                   </div>
 
-                                  <div class="mySlides4">
+                                  <div class="mySlides6">
                                     <img src="../img/WhereToClimb2.PNG" style="width:100%; border-radius: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                                   </div>
 
-                                  <div class="mySlides4">
+                                  <div class="mySlides6">
                                     <img src="../img/WhereToClimb3.PNG"style="width:100%; border-radius: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                                   </div>
 
-                                  <div class="mySlides4">
+                                  <div class="mySlides6">
                                     <img src="../img/WhereToClimb4.PNG"style="width:100%; border-radius: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                                   </div>
 
-                                  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-                                  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                                  <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
                              </div>
                          </div>
 
@@ -279,7 +404,7 @@
                                     </p>
                             </div>
                             <div class="dev-grid-item dev-item4-inverted">
-                                <a href="https://github.com/albertoramos1997/The-Island.git" class="gitHub-btn " target="_blank"><i class="fa fa-github"></i>  GitHub </a>
+                                <a href="https://github.com/albertoramos1997/Where-To-Climb.git" class="gitHub-btn " target="_blank"><i class="fa fa-github"></i>  GitHub </a>
                             </div>
                             <div class="dev-grid-item dev-item5-inverted">
                                 <a href="https://wheretoclimb.herokuapp.com/" class="gitHub-btn " target="_blank"><i class="fa fa-desktop"></i>  Website </a>
@@ -290,6 +415,8 @@
 
             </div>
         </section>
+
+
 
     </section>
 
@@ -327,12 +454,15 @@
 
     <!-- ______ SLIDES / CHANGE IMAGE ______ -->
     <script>
-            var slideIndex = [1,1,1,1];
-            var slideId = ["mySlides1", "mySlides2", "mySlides3","mySlides4"]
+            var slideIndex = [1,1,1,1,1,1];
+            var slideId = ["mySlides1", "mySlides2", "mySlides3","mySlides4","mySlides5","mySlides6"];
             showSlides(1, 0);
             showSlides(1, 1);
             showSlides(1, 2);
             showSlides(1, 3);
+            showSlides(1, 4);
+            showSlides(1, 5);
+
 
             function plusSlides(n, no) {
               showSlides(slideIndex[no] += n, no);
