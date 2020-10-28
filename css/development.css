@@ -116,6 +116,7 @@ ___________________________ CONTAINER / GRID ITEMS ___________________________
 }
 .dev-item1-app-inverted{
     grid-area: applogo;
+    text-align: center;
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -256,6 +257,7 @@ ___________________________ GENERAL MEDIA ___________________________
                 padding: 1em;
             }
 
+
             .dev-item1, .dev-item1-inverted{
                 grid-column: 1/-1; /* the 1/-1 removes the second column */
                 grid-row: 1;
@@ -307,7 +309,11 @@ ___________________________ GENERAL MEDIA ___________________________
 
         }
         @media (max-width: 50rem) {
-               .dev-item1-app-inverted{
+
+            .Dev{
+                padding: .5em;
+            }
+            .dev-item1-app-inverted{
                 grid-column: 1/-1; /* the 1/-1 removes the second column */
                 grid-row: 1;
                 text-align: center;
