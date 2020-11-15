@@ -43,8 +43,7 @@ ___________________________ CONTAINER / GRID ITEMS ___________________________
     margin: auto auto;
     color: #FFF;
 }
-.about-profile-photo{
-    background-image: url(../img/cv.jpg);
+.about-profile-photo img{
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-size: cover;
@@ -136,9 +135,9 @@ ___________________________ BUTTONS ___________________________
             .about-title {
                 text-align: center;
             }
-            .about-profile-photo {
+            .about-profile-photo img {
                 margin: auto auto;
-                border-radius: 200px;
+                border-radius: 150px;
                 width: 25vh;
                 height: 25vh;
             }
@@ -151,5 +150,16 @@ ___________________________ BUTTONS ___________________________
             }
             .button{
                 font-size: 1rem;
+            }
+            .about-grid-container {
+                grid-template-areas:
+                  'profilephoto profilephoto profilephoto'
+                  'aboutmetitle aboutmetitle aboutmetitle'
+                  'aboutmetext aboutmetext aboutmetext'
+                  'cvbtn  cvbtn cvbtn'
+                  'linkedinbtn linkedinbtn linkedinbtn';
+            }
+            .about-item5{
+                padding-top: .1em;
             }
         }

@@ -70,7 +70,8 @@ p{
     margin:0;
 }
 
-
+nav li{
+}
 
         /* Changes the font sizes based on screensize*/
         @media (max-width: 100rem) {

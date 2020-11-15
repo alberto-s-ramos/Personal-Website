@@ -102,7 +102,7 @@ ___________________________ CONTAINER / GRID ITEMS ___________________________
 /* ---- LOGO ---- */
  .dev-item1{
     grid-column: 6/10;
-    grid-row: 1/2 ;
+    grid-row: 1 ;
     display: block;
     background-repeat: no-repeat;
     background-position: center;
@@ -113,6 +113,7 @@ ___________________________ CONTAINER / GRID ITEMS ___________________________
     grid-row: 1 ;
     background-repeat: no-repeat;
     background-position: top;
+    margin-left: 2em;
 }
 .dev-item1-app-inverted{
     grid-area: applogo;
@@ -193,6 +194,7 @@ ___________________________ CONTAINER / GRID ITEMS ___________________________
     text-align: center;
 }
 
+
 /* ---- APPS ONLY ---- */
  .app-wrapper{
     display: grid;
@@ -257,14 +259,21 @@ ___________________________ GENERAL MEDIA ___________________________
                 padding: 1em;
             }
 
-
-            .dev-item1, .dev-item1-inverted{
+            .dev-item1{
                 grid-column: 1/-1; /* the 1/-1 removes the second column */
                 grid-row: 1;
                 text-align: center;
                 padding-right: 3rem;
             }
-
+            .dev-item1-inverted{
+                grid-column: 1/-1; /* the 1/-1 removes the second column */
+                grid-row: 1;
+                text-align: center;
+                padding-left: 0em;
+            }
+            .theislandlogo{
+                padding-right: 1em;
+            }
             .dev-item2, .dev-item2-inverted{
                 grid-column:  1/-1; /* the 1/-1 removes the second column */
                 grid-row: 2 ;
@@ -319,6 +328,13 @@ ___________________________ GENERAL MEDIA ___________________________
                 text-align: center;
                 padding-right: 3rem;
             }
+            .cs{
+              padding-left: 2rem;
+            }
+            .dev-item1-inverted{;
+                padding-right: 0rem;
+            }
+
 
             .dev-item2-app-inverted{
                 grid-column:  1/-1; /* the 1/-1 removes the second column */
